@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Quality Dental</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Quality Dental | Home</title>
+        <link rel="icon" href="/QD.ico" />
       </Head>
 
       <main className={styles.main}></main>
