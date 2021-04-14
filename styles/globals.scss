@@ -1,0 +1,10 @@
+$main-color: #c87f1f;
+$footer-color: #bd720e;
+$light-color: rgba(200, 127, 31, 0.1);
+
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

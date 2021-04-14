@@ -1,0 +1,26 @@
+@import "./globals.scss";
+
+.employeeCard {
+  @include flex();
+  justify-content: flex-start;
+  background-color: $light-color;
+  padding: 4rem 2rem;
+  min-width: 25rem;
+  height: 24rem;
+  border-radius: 10px;
+}
+
+.toothCard {
+  background-color: $light-color;
+  border-radius: 10px;
+  padding: 6rem 2rem;
+  @include flex();
+  justify-content: flex-end;
+  width: 24rem;
+  height: 24rem;
+  margin: 0rem 4rem;
+
+  img {
+    margin: 3rem 0rem;
+  }
+}

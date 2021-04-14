@@ -1,9 +1,25 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  padding: 0rem;
+  margin: 0rem;
+  box-sizing: border-box;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+blockquote {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  line-height: 1.7rem;
 }
 
 a {
@@ -11,6 +27,134 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+button {
+  border: none;
+  color: #fafafa;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  background-color: #c87f1f;
+  padding: 1rem 5rem;
+  margin: 2rem 0rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fafafa;
+  color: #c87f1f;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  padding: 2rem 6rem;
+}
+
+footer {
+  padding: 2rem 6rem 1rem 6rem;
+  background-color: #bd720e;
+  background-image: url("../public/footer/waves.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  color: #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > .content {
+  width: 80%;
+  margin: 4rem 0rem 0rem 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer > blockquote {
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0rem;
+  width: 30rem;
+  font-size: 1.2rem;
+  max-width: 50%;
+  text-align: center;
+}
+
+footer > .content > ul {
+  list-style: none;
+}
+
+footer > .content > ul > li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1.5rem 0rem;
+}
+
+footer > .content > ul > li > img {
+  margin-right: 2rem;
+}
+
+footer > .content > .open {
+  width: 20rem;
+  max-width: 80%;
+}
+
+footer > .content > .open > li {
+  width: 100%;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: #eee;
+}
+
+footer > .content > .open > li > .day {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+footer > .ctas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-end;
+  margin: 1rem 0rem 2rem 0rem;
+}
+
+footer > .ctas > a {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  margin: 0rem 2rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+footer > .ctas > a > img {
+  margin-right: 1.4rem;
+}
+
+footer > .ctas > .instagram {
+  background: #fafafa;
+  color: #eb4a66;
+}
+
+footer > .ctas > .facebook {
+  background: #3b5999;
+}
+
+footer > .foot {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  /* font-weight: bold; */
+  border-top: 0.01rem solid #fff6;
+  padding-top: 1rem;
+  width: 90%;
+  text-align: center;
 }

@@ -2,7 +2,7 @@ import React from "react"
 
 const NavigationBar = () => (
   <nav>
-    <img src="" alt="" />
+    <img src="/logo.svg" alt="" />
   </nav>
 )
 
