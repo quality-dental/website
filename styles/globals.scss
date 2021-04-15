@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
 $main-color: #c87f1f;
 $footer-color: #bd720e;
 $light-color: rgba(200, 127, 31, 0.1);
+$title-font: "Montserrat", sans-serif;
 
 @mixin flex {
   display: flex;

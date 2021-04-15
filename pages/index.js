@@ -1,9 +1,43 @@
+import React, { useState } from "react"
 import Head from "next/head"
 import EmployeeCard from "../components/EmployeeCard"
 import styles from "../styles/Home.module.scss"
 import cardStyles from "../styles/cards.module.scss"
 
 const Home = () => {
+  const [listVisibility, setListVisibility] = useState(false)
+
+  const showList = () => {
+    setListVisibility(!listVisibility)
+  }
+
+  const sendEmail = async (e) => {
+    e.preventDefault()
+    let url = "https://formsubmit.co/ajax/info@qualitydental.se"
+
+    let body = {
+      name: e.target.name.value,
+      tel: e.target.tel.value,
+      email: e.target.email.value,
+      mssg: e.target.mssg.value,
+    }
+
+    console.log(body)
+
+    let res = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(body),
+    })
+
+    let data = await res.json()
+
+    e.target.reset()
+  }
+
   return (
     <div>
       <Head>
@@ -21,7 +55,24 @@ const Home = () => {
             Tillsammans med dig skapar vi en lämplig behandlingsplan. <br />
             Samt hälper dig att upprätthålla en god munhälsa
           </p>
-          <button>kontakta oss</button>
+          <button>
+            <a href="#contact"> kontakta oss</a>
+          </button>
+
+          <div className={styles.openHrs}>
+            <h3>öppettider</h3>
+
+            <ul>
+              <li>
+                <p className={styles.day}>mån. - tor.</p>
+                <p>09:00 - 18:00</p>
+              </li>
+              <li>
+                <p className={styles.day}>fre.</p>
+                <p>11:00 - 15:00</p>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section className={styles.about}>
@@ -65,37 +116,39 @@ const Home = () => {
             </div>
           </div>
 
-          <button>Visa alla behandlingar</button>
+          <button onClick={showList}>Visa alla behandlingar</button>
 
-          <ul className={styles.treatmentsList}>
-            <li>
-              <p>Förebyggande vård</p>
-            </li>
-            <li>
-              <p>Porslinsfyllningar, kronor och broar</p>
-            </li>
-            <li>
-              <p>Tandblekning</p>
-            </li>
-            <li>
-              <p>Parodbehandlingar</p>
-            </li>
-            <li>
-              <p>Implantatbehandling</p>
-            </li>
-            <li>
-              <p>Tandvårdsrädda patienter</p>
-            </li>
-            <li>
-              <p>Bettfysiology behandling och bettskenor</p>
-            </li>
-            <li>
-              <p>Sömnapnéer</p>
-            </li>
-          </ul>
+          {listVisibility ? (
+            <ul className={styles.treatmentsList}>
+              <li>
+                <p>Förebyggande vård</p>
+              </li>
+              <li>
+                <p>Porslinsfyllningar, kronor och broar</p>
+              </li>
+              <li>
+                <p>Tandblekning</p>
+              </li>
+              <li>
+                <p>Parodbehandlingar</p>
+              </li>
+              <li>
+                <p>Implantatbehandling</p>
+              </li>
+              <li>
+                <p>Tandvårdsrädda patienter</p>
+              </li>
+              <li>
+                <p>Bettfysiology behandling och bettskenor</p>
+              </li>
+              <li>
+                <p>Sömnapnéer</p>
+              </li>
+            </ul>
+          ) : null}
         </section>
 
-        <section className={styles.contact}>
+        <section className={styles.contact} id="contact">
           <div className="content">
             <h2>kontakta oss</h2>
             <p>Varmt välkommen till vår klinik, tveka inte att höra av dig.</p>
@@ -138,7 +191,7 @@ const Home = () => {
         <section className={styles.formSection}>
           <h2>Vi svarar gärna på alla dina frågor</h2>
 
-          <form className={styles.formContent}>
+          <form className={styles.formContent} onSubmit={sendEmail}>
             <article className={styles.name}>
               <label htmlFor="name">Namn</label>
               <input type="text" name="name" required />
@@ -159,7 +212,7 @@ const Home = () => {
               <textarea type="text" name="mssg" />
             </article>
 
-            <button>skicka</button>
+            <button type="submit">skicka</button>
           </form>
         </section>
       </main>

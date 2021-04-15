@@ -8,6 +8,12 @@
   outline: none;
 }
 
+body,
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -15,6 +21,7 @@ h4,
 blockquote {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
+  color: #222;
 }
 
 p {
@@ -47,9 +54,14 @@ button:hover {
 }
 
 nav {
+  width: 100vw;
   position: absolute;
   top: 0;
   padding: 2rem 6rem;
+}
+
+nav > .logo {
+  max-width: 6.5%;
 }
 
 footer {
@@ -157,4 +169,75 @@ footer > .foot {
   padding-top: 1rem;
   width: 90%;
   text-align: center;
+}
+
+footer > .foot > blockquote,
+h4 {
+  color: #fff;
+}
+footer > .foot > h4,
+blockquote {
+  color: #fff;
+}
+
+@media only screen and (max-width: 900px) {
+  p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  button {
+    font-size: 0.76rem;
+  }
+
+  nav {
+    padding: 2rem;
+  }
+
+  nav > .logo {
+    max-width: 22%;
+  }
+
+  /*fotter*/
+
+  footer {
+    padding: 2rem;
+    background-color: #bd720e;
+    background-image: initial;
+  }
+
+  footer > .content {
+    width: 80%;
+    margin: 4rem 0rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer > blockquote {
+    padding: 1rem 0rem;
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+
+  footer > .content > .open {
+    width: 20rem;
+    max-width: 90%;
+    margin: 1rem 0rem;
+  }
+
+  footer > .ctas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    margin: 1rem 0rem 2rem 0rem;
+  }
+
+  footer > .ctas > a {
+    margin: 1rem 0rem;
+    align-self: center;
+  }
 }
