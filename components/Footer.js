@@ -2,6 +2,7 @@ import React from "react"
 
 const Footer = () => (
   <footer>
+    <img src="/logo.svg" alt="" className="logo" />
     <blockquote>quality dental</blockquote>
     <div className="content">
       <ul>

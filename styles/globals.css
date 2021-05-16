@@ -65,6 +65,7 @@ nav > .logo {
 }
 
 footer {
+  position: relative;
   padding: 2rem 6rem 1rem 6rem;
   background-color: #bd720e;
   background-image: url("../public/footer/waves.svg");
@@ -75,6 +76,16 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+footer > .logo {
+  background-color: #fffb;
+  transform: scale(0.75);
+  padding: 1.5rem;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0.2rem;
 }
 
 footer > .content {
@@ -204,6 +215,11 @@ blockquote {
     padding: 2rem;
     background-color: #bd720e;
     background-image: initial;
+  }
+
+  footer > .logo {
+    position: initial;
+    margin: 0rem 0rem 1rem 0rem;
   }
 
   footer > .content {
