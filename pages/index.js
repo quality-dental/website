@@ -73,7 +73,7 @@ const Home = () => {
               </li>
               <li>
                 <p className={styles.day}>fre.</p>
-                <p>7:00 - 12:00</p>
+                <p>08:00 - 17:00</p>
               </li>
             </ul>
           </div>
