@@ -22,7 +22,7 @@ const Home = () => {
       mssg: e.target.mssg.value,
     }
 
-    console.log(body)
+    // console.log(body)
 
     let res = await fetch(url, {
       method: "POST",
@@ -64,12 +64,16 @@ const Home = () => {
 
             <ul>
               <li>
-                <p className={styles.day}>mån. - tor.</p>
-                <p>09:00 - 18:00</p>
+                <p className={styles.day}>mån. - tis.</p>
+                <p>08:30 - 19:00</p>
+              </li>
+              <li>
+                <p className={styles.day}>ons. - tor.</p>
+                <p>07:30 - 16:00</p>
               </li>
               <li>
                 <p className={styles.day}>fre.</p>
-                <p>11:00 - 15:00</p>
+                <p>7:00 - 12:00</p>
               </li>
             </ul>
           </div>
