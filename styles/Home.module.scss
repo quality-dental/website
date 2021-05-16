@@ -330,13 +330,18 @@
 
 @media only screen and (max-width: 900px) {
   .intro {
+    background-image: url(../public/mobile-bg.jpg);
+    background-position: center -8rem;
+    background-repeat: no-repeat;
+    background-size: cover;
     @include flex();
     align-items: flex-start;
     justify-content: flex-start;
-    background-image: initial;
+    // background-image: initial;
     padding: 8rem 2rem;
     // text-align: center;
-    // height: 140vh;
+    height: initial;
+    min-height: 120vh;
 
     blockquote {
       font-weight: bold;
@@ -356,9 +361,10 @@
     }
 
     .openHrs {
-      padding: 4rem 2rem;
+      padding: 2rem;
       width: 100%;
-      background-color: $light-color;
+      margin: 4rem 0rem;
+      background-color: #0007;
       margin-top: 2rem;
       position: initial;
       border-radius: 10px;
@@ -370,6 +376,11 @@
 
       ul {
         margin-top: 3rem;
+        li {
+          p {
+            color: #eee;
+          }
+        }
       }
     }
   }
