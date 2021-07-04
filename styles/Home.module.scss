@@ -50,11 +50,14 @@
   }
 
   .openHrs {
-    width: 300px;
+    width: 340px;
     @include flex();
     position: absolute;
     top: 25vh;
-    right: 14vw;
+    right: 10vw;
+    background-color: #fff6;
+    padding: 2rem;
+    border-radius: 10px;
 
     h3 {
       width: 80%;
@@ -148,10 +151,6 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 8rem 0rem;
-
-    h3 {
-      margin: 2rem 0rem 0rem 0rem;
-    }
 
     p {
       text-align: center;

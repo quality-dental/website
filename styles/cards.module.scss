@@ -1,19 +1,58 @@
 @import "./globals.scss";
 
 .employeeCard {
+  position: relative;
   @include flex();
-  justify-content: flex-start;
+  justify-content: flex-end;
   background-color: $light-color;
-  padding: 4rem 2rem;
+  // padding:  0rem;
   width: 25rem;
   height: 24rem;
   border-radius: 10px;
   transition: all 0.4s ease;
   margin: 1rem;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: -1rem;
+    right: 50%;
+    transform: translateX(50%);
+    width: 105%;
+    z-index: 1;
+    transition: all 0.4s ease;
+  }
+
+  h3 {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: .5rem;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    background-color: $main-color;
+  }
+    
+  .titleTxt {
+    max-width: 20000000rem;
+    // width: 100%;
+    color: #eee;
+    z-index: 2;
+  }
+  
+  p {
+    max-width: 20000000rem;
+  }
 
   &:hover {
     transform: translateY(-0.4rem);
     box-shadow: 0px 10px 8px #00000018;
+
+    img {
+      width: 100%;
+    }
   }
 }
 
