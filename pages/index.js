@@ -64,20 +64,12 @@ const Home = () => {
 
             <ul>
               <li>
-                <p className={styles.day}>mån.</p>
+                <p className={styles.day}>mån. - ons. - tors.</p>
                 <p>09:00 - 18:00</p>
               </li>
               <li>
                 <p className={styles.day}>tis.</p>
                 <p>07:30 - 16:30</p>
-              </li>
-              <li>
-                <p className={styles.day}>ons.</p>
-                <p>09:00 - 18:00</p>
-              </li>
-              <li>
-                <p className={styles.day}>tors.</p>
-                <p>09:00 - 18:00</p>
               </li>
               <li>
                 <p className={styles.day}>fre.</p>

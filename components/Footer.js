@@ -25,16 +25,16 @@ const Footer = () => (
           <h4>oppettider</h4>
         </li>
         <li>
-          <p className="day">mån - tis</p>
-          <p>08:30 - 19:00</p>
+          <p className="day">mån - ons - tors</p>
+          <p>09:00 - 18:00</p>
         </li>
         <li>
-          <p className="day">ons - tor</p>
-          <p>07:30 - 16:00</p>
+          <p className="day">tis</p>
+          <p>07:30 - 16:30</p>
         </li>
         <li>
           <p className="day">fre</p>
-          <p>08:00 - 17:00</p>
+          <p>07:30 - 13:30</p>
         </li>
       </ul>
     </div>

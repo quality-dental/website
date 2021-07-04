@@ -6,7 +6,7 @@
   justify-content: flex-end;
   background-color: $light-color;
   // padding:  0rem;
-  width: 25rem;
+  width: 23rem;
   height: 24rem;
   border-radius: 10px;
   transition: all 0.4s ease;
@@ -18,7 +18,7 @@
     top: -1rem;
     right: 50%;
     transform: translateX(50%);
-    width: 105%;
+    width: 102%;
     z-index: 1;
     transition: all 0.4s ease;
   }
@@ -43,7 +43,7 @@
   }
   
   p {
-    max-width: 20000000rem;
+    max-width: 20rem;
   }
 
   &:hover {
