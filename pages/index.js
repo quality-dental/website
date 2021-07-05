@@ -89,15 +89,27 @@ const Home = () => {
           </p>
 
           <div className={styles.employees}>
-            <EmployeeCard name="Susan Faily" title="Leg. tandhygienist " />
-            <EmployeeCard
-              name="Basel Almasri"
-              title="Leg. Tandläkare, Verksamhetschef"
-            />
-            <EmployeeCard
-              name="Angelica Handke"
-              title="Operationssköterska, klinikkoordenator "
-            />
+            <div className={styles.mobileOnly}>
+              <EmployeeCard
+                name="Basel Almasri"
+                title="Leg. Tandläkare, Verksamhetschef"
+              />
+            </div>
+            <div>
+              <EmployeeCard name="Susan Faily" title="Leg. tandhygienist " />
+            </div>
+            <div className={styles.desktopOnly}>
+              <EmployeeCard
+                name="Basel Almasri"
+                title="Leg. Tandläkare, Verksamhetschef"
+              />
+            </div>
+            <div>
+              <EmployeeCard
+                name="Angelica Handke"
+                title="Operationssköterska, klinikkoordenator "
+              />
+            </div>
           </div>
         </section>
 
