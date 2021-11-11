@@ -193,6 +193,7 @@ const Home = () => {
             </ul>
           </div>
           <iframe
+            title="Clinic address"
             width="520"
             height="400"
             frameBorder="0"
