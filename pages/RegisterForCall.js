@@ -26,7 +26,7 @@ const RegisterForCall = () => {
 
     let data = await res.json()
     setShown(true)
-    setTimeout(() => router.push("/"), 2500)
+    setTimeout(() => router.push("/"), 3000)
 
     e.target.reset()
   }
