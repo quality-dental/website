@@ -104,12 +104,6 @@ const Home = () => {
                 title="Leg. Tandläkare, Verksamhetschef"
               />
             </div>
-            <div>
-              <EmployeeCard
-                name="Angelica Handke"
-                title="Operationssköterska, klinikkoordenator "
-              />
-            </div>
           </div>
         </section>
 
