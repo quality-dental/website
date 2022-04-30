@@ -26,7 +26,6 @@ const RateUs = () => {
   const submitCurrentRating = () => {
     if (currentStep <= 3) {
       const tempRating = { step: currentStep, rating: currentRating }
-      console.log("TempRating", tempRating)
       setRatings((prevState) => [...prevState, tempRating])
       currentRating === 5 && setFullRatings((prevState) => prevState + 1)
       setCurrentRating(0)

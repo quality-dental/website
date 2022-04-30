@@ -27,12 +27,16 @@ const ComplaintView = () => {
       body: JSON.stringify(body),
     })
 
-    e.target.reset()
+    if (res) {
+      e.target.reset()
+      alert("Tack for din feedback!")
+      window.location.replace("https://www.qualitydental.se/")
+    }
   }
 
   const ImageItem = ({ name }) => (
     <article
-      className={name === complaintPersonnel && styles.chosenComplaintImag}
+      className={name === complaintPersonnel ? styles.chosenComplaintImag : ""}
       onClick={() => setComplaintPersonnel(name)}
     >
       <img src={`/${name}.jpg`} />
