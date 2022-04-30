@@ -1,0 +1,195 @@
+@import "./globals.scss";
+
+.wrapper {
+  padding-top: 140px;
+  min-height: 95vh;
+  @include flex();
+  background: $light-background;
+
+  .ratingContainer {
+    margin-bottom: 4rem;
+    background-color: #fff;
+    min-height: 330px;
+    width: 750px;
+    @include flex();
+    border-radius: 1rem;
+    padding: 3rem 3rem 2rem;
+    color: #666;
+
+    .description {
+      margin: 1rem 0rem;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    .starsList {
+      margin-top: 2rem;
+      border-radius: 100px;
+      padding: 0.5rem 3rem;
+      margin-top: auto;
+
+      button {
+        background-color: transparent;
+        padding: 0;
+        margin: 0rem 1rem;
+        font-size: 34px;
+      }
+    }
+
+    .on {
+      color: #ffdf00;
+    }
+
+    .off {
+      color: #eee;
+    }
+
+    .cta {
+      margin: 1rem 0rem 0rem 0rem;
+      padding: 0.7rem 2rem;
+
+      &:hover {
+        color: $main-color;
+      }
+    }
+
+    button:disabled {
+      background-color: #aaa;
+      pointer-events: none;
+    }
+
+    ul {
+      list-style: decimal;
+      margin: 2rem;
+
+      .description {
+        text-align: left;
+      }
+    }
+
+    .trophy {
+      margin-bottom: 2rem;
+    }
+
+    form {
+      @include flex();
+    }
+  }
+}
+
+.choosDr {
+  @include flex();
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  color: #888;
+
+  textarea {
+    resize: none;
+    padding: 10rem;
+  }
+
+  .imageContainer {
+    margin-top: 1rem;
+    @include flex();
+    flex-direction: row;
+
+    img {
+      width: 8rem;
+    }
+
+    article {
+      position: relative;
+      border-radius: 0.3rem;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      margin-right: 1rem;
+      border-radius: 0.5rem;
+      overflow: hidden;
+
+      &:hover {
+        transform: translateY(-0.4rem);
+      }
+
+      p {
+        position: absolute;
+        left: 0rem;
+        right: 0rem;
+        bottom: 0rem;
+        color: #fff;
+        padding: 0.4rem;
+        background-image: linear-gradient(to top, #000, #0008, #0000);
+        padding: 1.6rem 0.5rem 0.5rem;
+      }
+    }
+  }
+}
+
+.feedbackContainer {
+  width: 80%;
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  textarea,
+  input {
+    margin-top: 1rem;
+    resize: none;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: #f2f2f2;
+  }
+}
+
+.complaintCta {
+  margin: 2.5rem 0rem 0rem;
+}
+
+.chosenComplaintImag {
+  // border: 0.2rem solid $main-color;
+  transition: all 0.4s ease;
+
+  &::after {
+    content: "\2714";
+    position: absolute;
+    top: 0rem;
+    left: 0.6rem;
+    color: $main-color;
+    font: 2rem bold;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    background-color: #fff;
+    padding: 140px 1rem 0px;
+    .ratingContainer {
+      width: 100%;
+      background-color: transparent;
+      padding: 1rem;
+
+      h2 {
+        text-align: center;
+      }
+
+      .starsList {
+        padding: 0.4rem 1.6rem;
+        margin-top: 3rem;
+        button {
+          margin: 0rem 0.5rem;
+        }
+      }
+
+      .choosDr {
+        width: 100%;
+      }
+
+      form {
+        width: 100%;
+      }
+    }
+  }
+}

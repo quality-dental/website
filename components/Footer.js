@@ -56,9 +56,6 @@ const Footer = () => (
         <p>@qualitydentalsweden</p>
       </a>
     </div>
-    <div className="foot">
-      <span>Skapad av Ali Suliman | ali.suliman.dev@gmail.com</span>
-    </div>
   </footer>
 )
 

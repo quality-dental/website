@@ -1,0 +1,75 @@
+@import "./globals.scss";
+
+.wrapper {
+  padding: 140px 0;
+  min-height: 95vh;
+  max-width: 880px;
+  margin: 0 auto;
+  @include flex();
+  align-items: flex-start;
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  .spacedText {
+    margin: 2rem 0rem;
+  }
+
+  .reviewsText {
+    font-weight: bold;
+    margin: 2rem 0rem;
+    align-self: center;
+  }
+
+  .fadeText {
+    color: #777;
+  }
+
+  ul {
+    color: #777;
+    padding: 0rem 1.2rem;
+  }
+
+  .welcomText {
+    align-self: center;
+    margin: 2rem 0rem;
+  }
+
+  .footer {
+    margin: 2rem 0rem;
+
+    h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .footBanner {
+    align-self: center;
+
+    p {
+      text-align: center;
+      color: #888;
+
+      span {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #222;
+      }
+    }
+  }
+
+  button {
+    align-self: center;
+  }
+}

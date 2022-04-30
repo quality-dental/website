@@ -22,8 +22,6 @@ const Home = () => {
       mssg: e.target.mssg.value,
     }
 
-    // console.log(body)
-
     let res = await fetch(url, {
       method: "POST",
       headers: {
@@ -43,6 +41,12 @@ const Home = () => {
       <Head>
         <title>Quality Dental | Home</title>
         <link rel="icon" href="/QD.ico" />
+        <meta charset="UTF-8" />
+        <meta name="description" content="" />
+        <meta
+          name="keywords"
+          content="tandläkare, tandläkare göteborg, tandläkare arkivgatan, tandvård göteborg, tandvård, tandvärk, qualitydental"
+        />
       </Head>
 
       <main className={styles.mainContainer}>
