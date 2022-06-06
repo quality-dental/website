@@ -41,7 +41,7 @@ const Home = () => {
       <Head>
         <title>Quality Dental | Home</title>
         <link rel="icon" href="/QD.ico" />
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta name="description" content="" />
         <meta
           name="keywords"

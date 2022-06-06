@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "next/link"
 import styles from "../styles/Exam.module.scss"
 
 const exam = () => {
@@ -49,7 +50,9 @@ const exam = () => {
         </li>
       </ul>
 
-      <button type="button">BOKA DIN TID NU OCH SPARA 1963 KR </button>
+      <Link href="/RegisterForCall">
+        <button type="button">BOKA DIN TID NU OCH SPARA 1963 KR</button>
+      </Link>
 
       <p className={styles.spacedText}>
         <b>Information Covid-19 | Vad vi gör för att ge dig ett säkert besök</b>
@@ -128,9 +131,11 @@ const exam = () => {
         </p>
       </div>
 
-      <button type="button">
-        JA TACK, JAG VILL TA DEL AV DETTA ERBJUDANDE
-      </button>
+      <Link href="/RegisterForCall">
+        <button type="button">
+          JA TACK, JAG VILL TA DEL AV DETTA ERBJUDANDE
+        </button>
+      </Link>
     </div>
   )
 }

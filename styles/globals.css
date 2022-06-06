@@ -61,7 +61,7 @@ nav {
 }
 
 nav > .logo {
-  max-width: 6.5%;
+  max-width: 80px;
 }
 
 footer {
@@ -206,7 +206,7 @@ blockquote {
   }
 
   nav > .logo {
-    max-width: 22%;
+    max-width: 80px;
   }
 
   /*fotter*/
