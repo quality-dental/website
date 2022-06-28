@@ -7,10 +7,10 @@ const exam = () => {
     <div className={styles.wrapper}>
       <div className={styles.title}>
         <section>
-          <h1>SPARA 87% Boka din kompletta tandläkarundersökning.</h1>
+          <h1>SPARA 81% Boka din kompletta tandläkarundersökning.</h1>
           <h1>
-            Röntgenbilder, lättare rengöring och putsning för endast 297 kr
-            (tidigare 2260 kr)
+            Röntgenbilder, lättare rengöring och putsning för endast 397 kr
+            (tidigare 2115 kr)
           </h1>
         </section>
 
@@ -25,37 +25,8 @@ const exam = () => {
       <p className={styles.spacedText}>
         <b>Just nu</b> gör vi något alldeles speciellt och erbjuder ett
         begränsat antal personer en undersökning, rengöring och putsning för
-        endast 297 KR.
-        <b> Allt det här ingår i undersökningen för endast 297 kr:</b>
-      </p>
-
-      <ul>
-        <li>
-          <p>
-            Vi använder oss av munskydd, handskar och visir för att undvika att
-            själva bli smittade eller föra någon smitta vidare.
-          </p>
-        </li>
-        <li>
-          <p>
-            Vi tvättar alltid händerna noggrant eller använder handsprit mellan
-            patienterna.
-          </p>
-        </li>
-        <li>
-          <p>
-            ​Vi rengör löpande under dagen vanliga kontaktytor i kliniken (så
-            som dörrhandtag, kortterminal och andra ytor) med ytdesinfektion.
-          </p>
-        </li>
-      </ul>
-
-      <Link href="/RegisterForCall">
-        <button type="button">BOKA DIN TID NU OCH SPARA 1963 KR</button>
-      </Link>
-
-      <p className={styles.spacedText}>
-        <b>Information Covid-19 | Vad vi gör för att ge dig ett säkert besök</b>
+        endast 397 KR.
+        <b> Allt det här ingår i undersökningen för endast 397 kr:</b>
       </p>
 
       <ul>
@@ -84,6 +55,10 @@ const exam = () => {
           </p>
         </li>
       </ul>
+
+      <Link href="/RegisterForCall">
+        <button type="button">BOKA DIN TID NU OCH SPARA 1963 KR</button>
+      </Link>
 
       <p className={styles.reviewsText}>
         <b>Det här säger våra patienter om oss</b>

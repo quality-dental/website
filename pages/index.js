@@ -42,7 +42,7 @@ const Home = () => {
         <title>Quality Dental | Home</title>
         <link rel="icon" href="/QD.ico" />
         <meta charSet="UTF-8" />
-        <meta name="description" content="" />
+        <meta name="description" content="Vi har öppet hela sommaren!" />
         <meta
           name="keywords"
           content="tandläkare, tandläkare göteborg, tandläkare arkivgatan, tandvård göteborg, tandvård, tandvärk, qualitydental"
@@ -59,9 +59,14 @@ const Home = () => {
             Tillsammans med dig skapar vi en lämplig behandlingsplan. <br />
             Samt hälper dig att upprätthålla en god munhälsa
           </p>
-          <button>
-            <a href="#contact"> kontakta oss</a>
-          </button>
+          <div className={styles.ctas}>
+            <button>
+              <a href="/RegisterForCall">Boka tid</a>
+            </button>
+            <button className={styles.ghost}>
+              <a href="#contact"> kontakta oss</a>
+            </button>
+          </div>
 
           <div className={styles.openHrs}>
             <h3>öppettider</h3>

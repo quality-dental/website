@@ -31,7 +31,7 @@
     ". . . . . ."
     "bq bq bq bq . ."
     "p p p . . ."
-    "btn btn .  . . ."
+    "btn btn btn  . . ."
     ". . . . . .";
 
   blockquote {
@@ -49,10 +49,39 @@
     margin-top: 1rem;
     color: #666;
   }
-  button {
+  .ctas {
     grid-area: btn;
     align-self: center;
     justify-self: flex-start;
+    display: flex;
+
+    @media only screen and (max-width: 900px) {
+      flex-direction: column;
+      justify-content: center;
+
+      button {
+        margin: 2rem 0rem 0rem 0rem;
+        &:first-child {
+          margin: 3rem 0rem 0rem 0rem;
+          margin-right: 0rem !important;
+        }
+      }
+    }
+
+    button {
+      padding: 1rem 0rem;
+      a {
+        width: 100%;
+      }
+      &:first-child {
+        margin-right: 2rem;
+      }
+    }
+
+    .ghost {
+      background: #fff;
+      color: $main-color;
+    }
   }
 
   .openHrs {
@@ -339,7 +368,6 @@
 }
 
 @media only screen and (max-width: 900px) {
-
   .mobileOnly {
     display: initial;
   }

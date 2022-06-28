@@ -40,12 +40,16 @@ button {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   background-color: #c87f1f;
-  padding: 1rem 5rem;
+  padding: 1rem 4rem;
   margin: 2rem 0rem;
   border-radius: 2rem;
   text-transform: uppercase;
   transition: all 0.4s ease;
   cursor: pointer;
+}
+
+button > a {
+  padding: 1rem 4rem;
 }
 
 button:hover {
