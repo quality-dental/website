@@ -171,7 +171,6 @@ const Home = () => {
           <div className="content">
             <h2>kontakta oss</h2>
             <p>Varmt välkommen till vår klinik, tveka inte att höra av dig.</p>
-            <p>Vi har öppet hela sommaren!</p>
 
             <ul>
               <li>
