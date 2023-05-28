@@ -1,7 +1,10 @@
 import React, { useState } from "react"
+import Router, { useRouter } from "next/router"
 import styles from "../styles/form_page.module.scss"
 
 const formArb = () => {
+  const router = useRouter()
+  const [loading, setLoading] = useState(false)
   const [firstName, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
   const [email, setEmail] = useState("")
@@ -9,6 +12,7 @@ const formArb = () => {
   const [bookTime, setBookTime] = useState("")
   const [lastVisit, setLastVisit] = useState("")
   const onSubmit = async (e) => {
+    setLoading(true)
     e.preventDefault()
     const body = {
       name: `${firstName} ${lastName}`,
@@ -34,6 +38,9 @@ const formArb = () => {
       setPhone("")
       setBookTime("")
       setLastVisit("")
+
+      router.push("/examin_success")
+      setLoading(false)
     } catch (e) {
       console.log({ e })
     }
@@ -113,22 +120,10 @@ const formArb = () => {
               />
             </div>
           </section>
-          <section className={styles.formRow}>
-            <label htmlFor="name">
-              آخر زيارة كانت لك عند طبيب الأسنان <span>*</span>
-            </label>
-            <div>
-              <input
-                type="date"
-                value={lastVisit}
-                onChange={(e) => setLastVisit(e.target.value)}
-                name="lastVisite"
-                required
-              />
-            </div>
-          </section>
 
-          <button type="submit">تواصلو معي</button>
+          <button type="submit">
+            تواصلو معي <span>{loading && "..."}</span>
+          </button>
         </form>
 
         <p>

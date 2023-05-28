@@ -4,7 +4,8 @@
   min-height: 100vh;
   width: 100vw;
 
-  .topBar {
+  .topBar,
+  .topBarSuccess {
     background-color: rgb(255, 203, 42);
     display: flex;
     justify-content: center;
@@ -17,6 +18,14 @@
     right: 0;
     left: 0;
     text-align: center;
+  }
+
+  .topBarSuccess {
+    background-color: #fff;
+
+    img {
+      max-width: 90px;
+    }
   }
 
   p {
@@ -47,6 +56,30 @@
     color: #fff;
     z-index: 1;
     margin-top: 2rem;
+  }
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  color: #fff;
+  background-color: rgb(46, 46, 46);
+  padding: 10rem 10% 4rem;
+
+  p,
+  ul {
+    text-align: right;
+  }
+
+  ul {
+    list-style: none;
+    color: #ccc;
+    line-height: 2rem;
   }
 }
 
