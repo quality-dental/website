@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import styles from "../../styles/form_page.module.scss"
+import styles from "../styles/form_page.module.scss"
 
 const formArb = () => {
   const [firstName, setFirstName] = useState("")
