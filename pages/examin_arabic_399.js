@@ -52,7 +52,7 @@ const formArb = () => {
       <div className={styles.formContainer}>
         <div className={styles.background}></div>
         <blockquote>
-          kr399 وفّر 83% واحجز موعد لفحص شامل يتضمن صور أشعة فقط ب (kr2260
+          kr399 وفّر 75% واحجز موعد لفحص شامل يتضمن صور أشعة فقط ب (kr1650
           سابقاً)
         </blockquote>
 
