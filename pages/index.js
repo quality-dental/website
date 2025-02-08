@@ -73,16 +73,28 @@ const Home = () => {
 
             <ul>
               <li>
-                <p className={styles.day}>mån. - ons. - tors.</p>
-                <p>09:00 - 18:00</p>
+                <p className={styles.day}>mån.</p>
+                <p>09:30 - 18:00</p>
               </li>
               <li>
                 <p className={styles.day}>tis.</p>
-                <p>07:30 - 16:30</p>
+                <p>08:30 - 16:00</p>
+              </li>
+              <li>
+                <p className={styles.day}>ons.</p>
+                <p>08:30 - 16:00</p>
+              </li>
+              <li>
+                <p className={styles.day}>tors.</p>
+                <p>09:30 - 18:00</p>
               </li>
               <li>
                 <p className={styles.day}>fre.</p>
-                <p>07:30 - 13:30</p>
+                <p>10:00 - 14:00</p>
+              </li>
+              <li>
+                <p className={styles.day}>sat.</p>
+                <p>11:00 - 18:00</p>
               </li>
             </ul>
           </div>
